@@ -27,11 +27,10 @@ A responsive movie application built with HTML, CSS (Tailwind), and JavaScript f
 
 movies-app/
 ├── css/
-│   ├── all.min.css           # Font Awesome icons
-│   └── tailwind_style.css    # Custom CSS styles
-├── img/                      # Movie posters and backgrounds
+│   ├── all.min.css           
+│   └── tailwind_style.css    
+├── img/                      
 ├── js/
-│   └── main.js               # Interactive functionality
-├── index.html                # Main application file
-└── README.md                 # This documentation
-
+│   └── main.js               
+├── index.html                
+└── README.md                 
