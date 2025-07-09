@@ -4,7 +4,7 @@ A responsive movie application built with HTML, CSS (Tailwind), and JavaScript f
 
 ## 🌟 Live Demo
 
-➡️ [View Live Demo](https://yourusername.github.io/movies-app) <!-- Replace with your GitHub Pages URL -->
+➡️ [View Live Demo](https://reemabdelkader.github.io/Movies-App/) 
 
 ## ✨ Features
 
