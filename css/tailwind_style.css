@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-padding-top: 2rem;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* custom scroll bar */
+html::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: var(--text-color);
+}
+html::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 5rem;
+}
+/* custom scroll bar */
+:root {
+  --main-color:#ff2c1f;
+  --text-color:#020307;
+  --bg-color:#fff;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #020307;
+  color: #fff;
+}
+.navbar a::after {
+  content: '';
+  position: absolute;
+  background-color: #ff2c1f;
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: -4px;
+  transition: 0.4s all linear;
+}
+.navbar a:hover::after,
+  .navbar .home-active::after {
+  width: 100%;
+}
+.shadow-header {
+  background-color: #fff !important;
+  box-shadow: 0 0 4px rgba(14, 55, 54, 0.15);
+}
+.shadow-header .navbar a {
+  color: #020307 !important;
+}
+.shadow-header .logo {
+  color: #020307 !important;
+}
+.shadow-header #menu-icon {
+  color: #020307 !important;
+}
+.home {
+  background-image: url('https://images.unsplash.com/photo-1489599363691-696806b6ad98?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80');
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 774px) {
+  .navbar {
+  position: absolute;
+  top: -578px;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  row-gap: 1.4rem;
+  padding: 20px;
+  box-shadow: 4px 4px 0 4px rgba(14, 55, 54, 0.15);
+  text-align: center;
+}
+.navbar a {
+  color: #020307 !important;
+  transition: 0.3s all linear;
+}
+.navbar a:hover {
+  color: #ff2c1f !important;
+  border-bottom: 2px solid #ff2c1f;
+}
+.navbar a::after {
+  display: none;
+}
+.navbar.active {
+  top: 100%;
+}
+#menu-icon {
+  display: block !important;
+  color: #fff;
+}
+}
+@media (min-width: 775px) {
+  #menu-icon {
+    display: none !important;
+  }
+}
